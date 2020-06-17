@@ -1,0 +1,22 @@
+{
+  "name": "keresoapp",
+  "version": "1.0.0",
+  "description": "Első kalandozásunk NPM földön",
+  "main": "scripts-vue.js",
+  "scripts": {
+    "liveserver": "live-server --port=8080 --host=localhost --open=kereso",
+    "sass": "node-sass --output-style compressed src/main.scss -o dist -w",
+    "dev": "concurrently \"npm run liveserver\" \"npm run sass\""
+  },
+  "author": "Komiki",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1"
+  }
+}
